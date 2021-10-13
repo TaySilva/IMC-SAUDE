@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content="O IMC (Índice de Massa Corporal) é um cálculo que ajuda a avaliar se a pessoa está dentro do seu peso ideal, de acordo com a altura. Veja como calcular seu IMC e qual os resultados que são considerados normais, acima ou abaixo do peso" />
+        <meta name="author" content="Tays Silva"/>
+
+        <title>IMC & Saúde</title>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+        <!-- Link principal CSS com o do Bootstrap, (como ficou muito grande realizei a compressão do codigo usando o CSSO)-->
+        <link href="css/styles.css" rel="stylesheet"/>
+    </head>
+    <body id="page-top">
+        
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top" ><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Classificação</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Conhecimentos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#calc">Calculadora</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+       
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Seja bem vind@!</div>
+                <div class="masthead-heading text-uppercase">IMC & Saúde </div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio">Saiba mais</a>
+            </div>
+        </header>
+        
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Classificação</h2>
+                    <h3 class="section-subheading text-muted">A classificação do índice de massa corporal (IMC), pode ajudar a identificar obesidade ou desnutrição em crianças, adolescentes, adultos e idosos.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Magreza</div>
+                                <div class="portfolio-caption-subheading text-muted">Entre 17 e 18,49</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Normal</div>
+                                <div class="portfolio-caption-subheading text-muted">Entre 18,5 e 24,99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Sobrepeso</div>
+                                <div class="portfolio-caption-subheading text-muted">Entre 25 e 29,99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Obesdade leve</div>
+                                <div class="portfolio-caption-subheading text-muted">Entre 30 e 34,9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Obesidade moderada</div>
+                                <div class="portfolio-caption-subheading text-muted">Entre 35 e 39,9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                       
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Obesidade Mórbida</div>
+                                <div class="portfolio-caption-subheading text-muted">Acima de 40</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Conhecimentos</h2>
+                    <h3 class="section-subheading text-muted">Veja a seguir, algumas informações sobre o IMC.</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4><i class="fa fa-comments "></i></h4>
+                                <h4 class="subheading">O QUE É IMC?</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">IMC é uma sigla utilizada para Índice de Massa Corporal. Ele é uma medida de padrão internacional adotada pela Organização Mundial de Saúde (OMS), utilizada para avaliar o grau de obesidade do indivíduo!</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4><i class="fa fa-comments "></i></h4>
+                                <h4 class="subheading">COMO É UTILIZADO?</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Hoje em dia, o IMC é utilizado como forma de comparar a saúde de populações, ou até mesmo definir prescrição de medicações!</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4><i class="fa fa-comments "></i></h4>
+                                <h4 class="subheading">O CÁLCULO DO IMC DIFERE CRIANÇAS DE ADULTOS?</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Não, o que difere é a classificação do resultado.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4><i class="fa fa-comments "></i></h4>
+                                <h4 class="subheading">CURIOSIDADES</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">1. Não é possível diferenciar os componentes gordo e magro da massa corporal;
+
+                                2. As pessoas brevilíneas e/ou musculosas podem ter um valor de Índice de Massa Corporal inadequado à sua realidade e serem consideradas obesas; 3. Diferenças étnicas influenciam no IMC, como no caso dos asiáticos que são considerados obesos pelo IMC;
+
+                                4. Para idosos e crianças, o IMC possui uma classificação diferenciada.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Seja  
+                                <br />
+                                seu
+                                <br />
+                                foco!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <div class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/im.svg" alt="..." /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/bm.svg" alt="..." /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/es.svg" alt="..." /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/fo.svg" alt="..." /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section class="page-section" id="calc">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Descubra seu peso ideal!</h2>
+                    <h3 class="section-subheading text-muted">Coloque os seus dados na calculadora a seguir e saiba se seu peso idel ou sua meta estão saúdaveis.</h3>
+                </div>
+                
+                <section id="bmi" class="my-4">
+                    <div class="container bg-light text-dark font-weight-bolder p-5">
+                        <h3 class="text-center">Calculadora de IMC</h3>
+                        <form action="">
+                            <div class="form-group">
+                                <label for="BMIweight" class="py-1">Qual o seu peso?</label>
+                                <input type="number" placeholder="Digite seu peso (em kg)" class="form-control my-2" name="BMIweight" id="BMIweight" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="BMIheight" class="py-1">Altura</label>
+                                <input type="number" placeholder="Digite sua altura (em centímetros)" class="form-control my-2" name="BMIheight" id="BMIheight" required>
+                                <select name="BMIheightValue" id="BMIheightValue" class="form-control" onchange="BMIheightValueFunc()">
+                                                    
+                                                    <option value="cm">Centímetros</option>
+                                                   
+                                </select>
+                            </div>
+                            <button type="button" onclick="BMIcalc()" class="mt-4 btn btn-secondary btn-lg">Calcule</button>
+                            <button type="reset" class="mt-4 btn btn-secondary btn-lg ml-auto">Redefinir todos os dados</button>
+                            <div style="text-align: center;margin-top: 4rem; font-weight: bold;" id="BMIres">
+                                <h5>RESULTADO:</h4>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                
+                <script src="script.js"></script>
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+            
+            </div>
+        </section>
+
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Tays Silva 2021</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="mailto:taysdecassias@gmail.com?subject=Assunto&body=Digite sua mensagem" ><i class="fa fa-envelope "></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://wa.me/5531999569922" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/tays-silva-47452a1b3"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+    
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    
+                                    <h2 class="text-uppercase">Magreza</h2>
+                                    <p class="item-intro text-muted">Resultado entre 17 e 18,49</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
+                                    <p>Quando o IMC está na faixa de magreza, é importante consultar um nutricionista que fará uma avaliação completa, indicando um plano alimentar personalizado que priorize o ganho de peso de forma saudável!</p>
+                                    
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Voltar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    
+                                    <h2 class="text-uppercase">Normal</h2>
+                                    <p class="item-intro text-muted">Peso entre 18,5 e 24,99</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
+                                    <p>Estar dentro da faixa de peso normal, o que significa ter um peso considerado adequado para sua altura, de acordo com as faixas do IMC - momento de fazer a manutenção do peso!</p>
+                                    
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Voltar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                   
+                                    <h2 class="text-uppercase">Sobrepeso</h2>
+                                    <p class="item-intro text-muted">Resultado entre 25 e 29,99!</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
+                                    <p>Mesmo ainda não sendo classificado como obesidade, o nível de sobrepeso, também chamado de pré-obesidade, configura um estado de alerta que pode ou não evoluir para um quadro de obesidade. Aqui não falamos ainda sobre danos para a saúde, mas esse limiar deve ser observado com cuidado.  Nesse estágio, a mudança de hábitos alimentares, a adoção de uma rotina de exercícios e o acompanhamento médico costumam ser medidas eficazes para retornar o paciente ao peso saudável. A administração de tratamento nesta fase pode prevenir o desenvolvimento da obesidade e outras complicações de saúde. </p>
+                                  
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Voltar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    
+                                    <h2 class="text-uppercase">Obesidade leve</h2>
+                                    <p class="item-intro text-muted">Resultado entre 30 e 34,9!</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
+                                    <p>Para pacientes nesse estágio, a primeira opção de tratamento geralmente são as mudanças alimentares, com a orientação de um nutricionista, e a adoção de uma rotina de exercícios físicos, de preferência acompanhado por um profissional de educação física, para melhor adequação e segurança. Eventualmente, o profissional que acompanha o paciente pode indicar algum tipo de medicação que auxilie na perda de peso.A cirurgia bariátrica não costuma ser recomendada para pacientes com obesidade leve, mas o caso de cada paciente deve ser estudado individualmente. </p>
+                                    
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Voltar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    
+                                    <h2 class="text-uppercase">Obesidade moderada</h2>
+                                    <p class="item-intro text-muted">Resultado entre 35 e 39,9!</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
+                                    <p>Pessoas com IMC na faixa de 35 a 39,9 já são classificadas como tendo uma obesidade de grau moderado.Nesse estágio, os riscos para a saúde são mais elevados que no grau 1.Além das opções de tratamento recomendadas para a obesidade leve, aqui já a cirurgia bariátrica já passa a ser uma opção, em casos específicos, como fracasso no tratamento convencional há pelo menos 2 anos e caso o paciente apresente comorbidades. </p>
+                                   
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Voltar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                  
+                                    <h2 class="text-uppercase">Obesidade mórbida</h2>
+                                    <p class="item-intro text-muted">Resultado acima de 40!</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
+                                    <p>Nesse estágio, a obesidade já se configura como uma ameaça grave à saúde do paciente. O risco de infarto agudo do miocárdio e de acidente vascular cerebral (AVCs), duas das principais causas de morte no Brasil e no mundo, é muito grande, e o acompanhamento médico deve ser regular e constante.Para otimizar o tratamento, é recomendado um acompanhamento multidisciplinar, com nutricionista, endocrinologista, cardiologista e psicólogo, visando oferecer suporte ao paciente em todas as instâncias. As bases do tratamento continuam sendo as mesmas: dieta, exercícios físicos e medicamentos, com forte recomendação para a realização de cirurgia bariátrica, caso não se observem resultado nas abordagens clínicas anteriores.</p>
+                                    
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Voltar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
